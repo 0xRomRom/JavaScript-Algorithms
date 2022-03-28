@@ -3,4 +3,4 @@
 
 ## It will serve as a two stage learning process;
 ## 1. Write algorithms.
-## 2. Come back later to refactor
+## 2. Come back later to refactor.
