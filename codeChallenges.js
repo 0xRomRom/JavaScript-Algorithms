@@ -37,8 +37,8 @@ myFunction("m", "how many times does the character occur in this sentence?");
 // Challenge #003
 
 /* Write a function that takes two numbers as arguments (x, y). Check if x is divisible by y. 
-If yes, return x. 
-If not, return the next higher natural number that is divisible by y.
+If true, return x. 
+If false, return the next higher natural number that is divisible by y.
 */
 
 function myFunction(x, y) {
