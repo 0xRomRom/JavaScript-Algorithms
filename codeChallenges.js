@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //Challenge #001
 
-// Write a function that takes two strings. Remove any special characters. Parameter b also needs to be reversed. Return a & b together with the first character capitalized.
+// Write a function that takes two strings. Remove any special characters. String b also needs to be reversed. Return a & b together with the first character capitalized.
 
 function myFunction(a, b) {
   //Parameter A: Symbols removed, first character capitalized
@@ -13,7 +13,8 @@ function myFunction(a, b) {
   const parB2 = parB1.split("").reverse().join("");
   return parA3 + parB2;
 }
-myFunction("java", "tpi%rcs"); // Returns "Javascript"
+myFunction("java", "tpi%rcs"); 
+//Returns "Javascript"
 
 ////////////////////////////////////////////////////////////
 //Challenge #002
