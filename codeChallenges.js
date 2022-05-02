@@ -1,7 +1,8 @@
 ////////////////////////////////////////////////////////////
 //Challenge #001
 
-// Write a function that takes two strings. Remove any special characters. Parameter b also needs to be reversed. Return a & b together with the first character capitalized.
+// Write a function that takes two strings. Remove any special characters. Parameter b also needs to be reversed.
+// Return a & b together with the first character capitalized.
 
 function myFunction(a, b) {
   //Parameter A: Symbols removed, first character capitalized
@@ -35,10 +36,9 @@ myFunction("m", "how many times does the character occur in this sentence?");
 ////////////////////////////////////////////////////////////
 // Challenge #003
 
-/* Write a function that takes two numbers as arguments (x, y). Check if x is divisible by y. 
-If yes, return x. 
-If not, return the next higher natural number that is divisible by y.
-*/
+// Write a function that takes two numbers as arguments (x, y)Check if x is divisible by y.
+// If true, return x.
+// If false, return the next higher natural number that is divisible by y.
 
 function myFunction(x, y) {
   //Check if x is divisible by y, if so return x.
@@ -55,3 +55,28 @@ function myFunction(x, y) {
 }
 myFunction(7, 3);
 //Returns 9
+
+////////////////////////////////////////////////////////////
+// Challenge #004
+
+// Write a function that takes a string as argument
+// As it is, the string has no meaning
+// Increment each letter to the next letter in the alphabet
+// Return the correct word
+function myFunction(str) {
+  let result = [];
+  let finalResult = [];
+  const toArray = str.split("");
+  toArray.forEach((i) => {
+    result.push(i.charCodeAt(0) + 1);
+  });
+  result.forEach((i) => {
+    finalResult.push(String.fromCharCode(i));
+  });
+  return finalResult.join("");
+}
+myFunction("bnchmf");
+// returns 'coding'
+
+////////////////////////////////////////////////////////////
+// Challenge #005
