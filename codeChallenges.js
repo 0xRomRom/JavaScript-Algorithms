@@ -81,3 +81,60 @@ myFunction("bnchmf");
 
 ////////////////////////////////////////////////////////////
 // Challenge #005
+
+// Write a function that takes an array (a) and a value (n) as argument
+// Return the nth element of 'a'
+function myFunction(a, n) {
+  return a[n - 1];
+}
+myFunction([1, 4, 6, 8, 2], 3);
+//returns 6
+
+////////////////////////////////////////////////////////////
+// Challenge #006
+
+// Write a function that takes an array (a) as argument
+// Remove the first 3 elements of 'a'
+// Return the result
+
+function myFunction(a) {
+  return console.log(a.slice(3, a.length));
+}
+myFunction([1, 2, 3, 4]);
+//returns [4]
+
+////////////////////////////////////////////////////////////
+// Challenge #007
+
+// Write a function that takes an object (a) and a string (b) as argument
+// Return true if a has a property with key b
+// Return false otherwise
+
+function myFunction(a, b) {
+  return a.hasOwnProperty(b) ? true : false;
+}
+myFunction({ a: 1, b: 2, c: 3 }, "b");
+// returns true
+
+////////////////////////////////////////////////////////////
+// Challenge #008
+
+// Write a function that takes an array (a) as argument
+// Extract the last 3 elements of a
+// Return the resulting array
+function myFunction(a) {
+  return a.splice(a.length - 3, a.length);
+}
+myFunction([1, 2, 3, 4]);
+// returns [1]
+
+////////////////////////////////////////////////////////////
+// Challenge #009
+
+// Write a function that takes an array (a) and a number (n) as arguments
+// It should return the last n elements of a
+function myFunction(a, n) {
+  return a.slice(a.length - n);
+}
+myFunction([1, 2, 3, 4, 5], 2);
+// returns [4, 5]
