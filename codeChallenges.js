@@ -1,8 +1,12 @@
 ////////////////////////////////////////////////////////////
 //Challenge #001
 
+<<<<<<< HEAD
 // Write a function that takes two strings. Remove any special characters. Parameter b also needs to be reversed.
 // Return a & b together with the first character capitalized.
+=======
+// Write a function that takes two strings. Remove any special characters. String b also needs to be reversed. Return a & b together with the first character capitalized.
+>>>>>>> aed19550b15cb67903317a5ffd3a1a71257057da
 
 function myFunction(a, b) {
   //Parameter A: Symbols removed, first character capitalized
@@ -14,7 +18,8 @@ function myFunction(a, b) {
   const parB2 = parB1.split("").reverse().join("");
   return parA3 + parB2;
 }
-myFunction("java", "tpi%rcs"); // Returns "Javascript"
+myFunction("java", "tpi%rcs"); 
+//Returns "Javascript"
 
 ////////////////////////////////////////////////////////////
 //Challenge #002
@@ -36,9 +41,16 @@ myFunction("m", "how many times does the character occur in this sentence?");
 ////////////////////////////////////////////////////////////
 // Challenge #003
 
+<<<<<<< HEAD
 // Write a function that takes two numbers as arguments (x, y)Check if x is divisible by y.
 // If true, return x.
 // If false, return the next higher natural number that is divisible by y.
+=======
+/* Write a function that takes two numbers as arguments (x, y). Check if x is divisible by y. 
+If true, return x. 
+If false, return the next higher natural number that is divisible by y.
+*/
+>>>>>>> aed19550b15cb67903317a5ffd3a1a71257057da
 
 function myFunction(x, y) {
   //Check if x is divisible by y, if so return x.
