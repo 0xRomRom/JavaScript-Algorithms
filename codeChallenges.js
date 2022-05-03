@@ -138,3 +138,68 @@ function myFunction(a, n) {
 }
 myFunction([1, 2, 3, 4, 5], 2);
 // returns [4, 5]
+
+////////////////////////////////////////////////////////////
+// Challenge #010
+
+// Write a function that takes an array (a) and a value (b) as argument
+// The function should clean a from all occurrences of b
+// Return the filtered array
+function myFunction(a, b) {
+  return a.filter((word) => word !== b);
+}
+myFunction([1, 2, 3], 2);
+// returns [1,3]
+
+////////////////////////////////////////////////////////////
+// Challenge #011
+
+// Write a function that takes an array (a) as argument
+// Return the number of elements in a
+function myFunction(a) {
+  return +a.length;
+}
+myFunction([1, 2, 2, 4]);
+//returns 4
+
+////////////////////////////////////////////////////////////
+// Challenge #012
+
+// Write a function that takes an array of numbers as argument
+// Return the number of negative values in the array
+function myFunction(a) {
+  let count = 0;
+  a.forEach((i) => {
+    i < 0 ? count++ : null;
+  });
+  return count;
+}
+myFunction([1, -2, 2, -4]);
+// returns 2
+
+////////////////////////////////////////////////////////////
+// Challenge #013
+
+// Write a function that takes an array of numbers as argument
+// It should return an array with the numbers sorted in descending order
+function myFunction(arr) {
+  return arr.sort().reverse();
+}
+myFunction([1, 3, 2]);
+// returns [3,2,1]
+
+////////////////////////////////////////////////////////////
+// Challenge #014
+
+// Write a function that takes an array of numbers as argument
+// It should return the average of the numbers
+function myFunction(arr) {
+  let total = 0;
+  arr.forEach((i) => (total += i));
+  return total / arr.length;
+}
+myFunction([10, 100, 40]);
+// returns 50
+
+////////////////////////////////////////////////////////////
+// Challenge #015
